@@ -8,7 +8,6 @@ int main(void)
 {
 	int N = 0, count = 0, tmp = 0;
 	scanf("%d", &N);
-		
 
 	for (int i = 0; i < N; i++)
 	{
@@ -18,19 +17,16 @@ int main(void)
 		count = 0;
 		scanf("%s", arr);
 
-
 		for (int k = 0; k < sizeof(arr); k++)
 		{
 			if (arr[k] == 'O')
 				tmp++;
 			else
 				tmp = 0;
-
 			count = count + tmp;
 		}
-		
+
 		printf("%d\n", count);
 	}
-
 	return 0;
 }
